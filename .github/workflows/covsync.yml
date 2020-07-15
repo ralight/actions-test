@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with: fetch-depth 0
+        with:
+          fetch-depth: 0
       - run: |
           git checkout -b coverity-fixes origin/coverity-fixes
           git checkout -b fixes origin/fixes
