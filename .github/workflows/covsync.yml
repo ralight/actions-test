@@ -10,7 +10,5 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
-          git checkout -b coverity-fixes origin/coverity-fixes
-          git checkout -b fixes origin/fixes
-          git branch -f coverity-fixes fixes
+          git checkout -f coverity-fixes origin/fixes
           git push origin coverity-fixes
