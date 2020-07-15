@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
         with: fetch-depth 0
       - run: |
-        git checkout -b coverity-fixes origin/coverity-fixes
-        git checkout -b fixes origin/fixes
-        git branch -f coverity-fixes fixes
-        git push origin coverity-fixes
+          git checkout -b coverity-fixes origin/coverity-fixes
+          git checkout -b fixes origin/fixes
+          git branch -f coverity-fixes fixes
+          git push origin coverity-fixes
